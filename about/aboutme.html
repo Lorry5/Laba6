@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Aboutme{% endblock %}
+{% block head %}
+    {% for i in css0 %}
+    <link rel="stylesheet" href="/_static/{{i}}"/>
+    {% endfor %}
+{% endblock %}
+{% block content %}
+    <h1>Index</h1>
+    <p class="important">
+    {% for j in js0 %}
+         <script src="/_static/{{j}}></script>
+    {% endfor %}
+    </p>
+{% endblock %}
